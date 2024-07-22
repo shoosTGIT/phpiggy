@@ -6,7 +6,8 @@
     "autoload": {
         "psr-4": {
             "Framework\\": "src/Framework",
-            "App\\": "src/App"
+            "App\\": "src/App",
+            "Router\\": "src/Router"
         }
     }
 }
