@@ -7,12 +7,14 @@ namespace App\Config;
 use Framework\App;
 use App\Middleware\{
     TemplateDataMiddleware,
-    ValidationExceptionMiddleware
+    ValidationExceptionMiddleware,
+    SessionMiddleware
 };
-
+use App\Middlewear\SessionMiddlewear as MiddlewearSessionMiddlewear;
 
 function registerMiddleware(App $app)
 {
     $app->addMiddleware(TemplateDataMiddleware::class);
     $app->addMiddleware(ValidationExceptionMiddleware::class);
+    $app->addMiddleware(SessionMiddleWare::class);
 }
