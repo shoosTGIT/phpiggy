@@ -2,9 +2,12 @@
 
 declare(strict_types=1);
 
-use Framework\{TemplateEngine, Database};
+use Framework\{TemplateEngine, Database, Container};
 use App\Config\Paths;
-use App\Services\ValidatorService;
+use App\Services\{
+    ValidatorService,
+    UserService
+};
 
 
 return [
